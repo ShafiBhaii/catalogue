@@ -5,5 +5,5 @@ FROM mysql:5.7
  ENV MYSQL_DATABASE=socksdb
 
 #COPY ./data/dump.sql /docker-entrypoint-initdb.d/
-COPY ./data/dump.sql .
+COPY /data/dump.sql /docker-entrypoint-initdb.d/
 
